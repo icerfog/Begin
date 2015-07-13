@@ -1,0 +1,5 @@
+C:\Users\Андрей\Documents\задачи\Begin1\Begin1\bin\Debug\Begin1.exe
+C:\Users\Андрей\Documents\задачи\Begin1\Begin1\bin\Debug\Begin1.pdb
+C:\Users\Андрей\Documents\задачи\Begin1\Begin1\obj\x86\Debug\Begin.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\Documents\задачи\Begin1\Begin1\obj\x86\Debug\Begin1.exe
+C:\Users\Андрей\Documents\задачи\Begin1\Begin1\obj\x86\Debug\Begin1.pdb
