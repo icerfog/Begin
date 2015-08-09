@@ -17,14 +17,14 @@ namespace MyPractise
 	class WorkSpace
 	{
 //==========================================================================================
-		static int Day = 2, Count = 16; 	
+		static int Day = 4, Count = 25+3; 	
 		static float Scss = Count/10f;
 		public static void Main (string[] args)
 		{
 			Console.WriteLine ("\t\tСегодня {0}й день. \n\tСделано: {1} задач. Твой уровень- {2:0.#}",
 				Day, Count, Scss);
 			
-/*====>>>*/		Begin.B10();	// <<<====
+			Integer.I1();
 
 			Console.ReadKey ();
 		}
@@ -175,5 +175,137 @@ namespace MyPractise
 			float x = float.Parse (Console.ReadLine ());
 			Console.WriteLine ("Rass = {0}", Math.Abs (X - x));
 		}
+		public static void B17()
+		{
+			Console.WriteLine ("A = ");
+			float a = float.Parse (Console.ReadLine());
+			Console.WriteLine ("B = ");
+			float b = float.Parse (Console.ReadLine());
+			Console.WriteLine ("C = ");
+			float c = float.Parse (Console.ReadLine());
+			Console.WriteLine ("AC = {0}", Math.Abs (c - a));
+			Console.WriteLine ("BC = {0}", Math.Abs (c - b));
+			Console.WriteLine ("AC + BC = {0}", Math.Abs (c - a) + Math.Abs (c - b));
+		}
+		public static void B18()
+		{
+			Console.WriteLine ("A = ");
+			float a = float.Parse (Console.ReadLine());
+			Console.WriteLine ("B = ");
+			float b = float.Parse (Console.ReadLine());
+			Console.WriteLine ("C = ");
+			float c = float.Parse (Console.ReadLine());
+			Console.WriteLine ("AC({0})* BC({1}) = {2}", 
+				Math.Abs (c - a), Math.Abs (c - b), Math.Abs (c - a) * Math.Abs (c - b));
+		}
+		public static void B19()
+		{
+			Console.WriteLine ("X1 = ");
+			float X = float.Parse (Console.ReadLine());
+			Console.WriteLine ("Y1 = ");
+			float Y = float.Parse (Console.ReadLine());
+			Console.WriteLine ("X2 = ");
+			float x = float.Parse (Console.ReadLine());
+			Console.WriteLine ("Y2 = ");
+			float y = float.Parse (Console.ReadLine());
+			float a = x - X, b = y - Y;
+			Console.WriteLine ("Perimetr = {0}", 2 * (a + b));
+			Console.WriteLine ("Squere = {0}", a * b);
+		}
+		public static void B20()
+		{
+			Console.WriteLine ("X1 = ");
+			float x1 = float.Parse (Console.ReadLine());
+			Console.WriteLine ("Y1 = ");
+			float y1 = float.Parse (Console.ReadLine());
+			Console.WriteLine ("X2 = ");
+			float x2 = float.Parse (Console.ReadLine());
+			Console.WriteLine ("Y2 = ");
+			float y2 = float.Parse (Console.ReadLine());
+			double a = Math.Sqrt ((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+			Console.WriteLine ("Rass-e = {0}",a);
+		}
+		public static void B21()
+		{
+			Console.WriteLine ("X1 = ");
+			float x1 = float.Parse (Console.ReadLine());
+			Console.WriteLine ("Y1 = ");
+			float y1 = float.Parse (Console.ReadLine());
+			Console.WriteLine ("X2 = ");
+			float x2 = float.Parse (Console.ReadLine());
+			Console.WriteLine ("Y2 = ");
+			float y2 = float.Parse (Console.ReadLine());
+			Console.WriteLine ("X3 = ");
+			float x3 = float.Parse (Console.ReadLine());
+			Console.WriteLine ("Y3 = ");
+			float y3 = float.Parse (Console.ReadLine());
+			double a = Math.Sqrt ((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)),
+			b = Math.Sqrt ((x3 - x1) * (x3 - x1) + (y3 - y1) * (y3 - y1)),
+			c = Math.Sqrt ((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3)),
+			p = (a + b + c) / 2;
+			Console.WriteLine ("Squere = {0}", Math.Sqrt (p * (p - a) * (p - b) * (p - c)));
+		}
+		public static void B22()
+		{
+			Console.Write ("A = ");
+			float a = Math.Abs(float.Parse (Console.ReadLine ()));
+			Console.Write ("B = ");
+			float b = Math.Abs(float.Parse (Console.ReadLine ()));
+			a = a + b - (b = a);
+			Console.Write ("A = {0}\nB = {1}", a, b);
+		}
+		public static void B23()
+		{
+			Console.Write ("A = ");
+			float a = Math.Abs(float.Parse (Console.ReadLine ()));
+			Console.Write ("B = ");
+			float b = Math.Abs(float.Parse (Console.ReadLine ()));
+			Console.Write ("C = ");
+			float c = Math.Abs(float.Parse (Console.ReadLine ()));
+			a = a + b - (b = a);
+			c = c + b - (b = c);
+			Console.Write ("A = {0}\nB = {1}\nC = {2}", a, b, c);
+		}
+		public static void B24()
+		{
+			Console.Write ("A = ");
+			float a = Math.Abs(float.Parse (Console.ReadLine ()));
+			Console.Write ("B = ");
+			float b = Math.Abs(float.Parse (Console.ReadLine ()));
+			Console.Write ("C = ");
+			float c = Math.Abs(float.Parse (Console.ReadLine ()));
+			a = a + c - (c = a);
+			b = b + a - (a = b);
+			Console.Write ("A = {0}\nB = {1}\nC = {2}", a, b, c);
+		}
+		public static void B25()
+		{
+			Console.Write ("X = ");
+			double x = Math.Abs(float.Parse (Console.ReadLine ()));
+			x = 3 * Math.Pow (x, 6) - 6 * x * x - 7;
+			Console.Write ("y = {0:0.#####}", x);
+		}
+	}
+	class Integer
+	{
+		public static void I1()
+		{
+			Console.Write ("L = ");
+			int l = int.Parse (Console.ReadLine ());
+			Console.WriteLine ("L = {0}m", l / 100);
+		}
+		public static void I2()
+		{
+			Console.Write ("M = ");
+			int m = int.Parse (Console.ReadLine ());
+			Console.WriteLine ("M = {0}t", m / 1000);
+		}
+		public static void I3()
+		{
+			Console.Write ("Size = ");
+			int m = int.Parse (Console.ReadLine ());
+			Console.WriteLine ("Size = {0} KB", m / 1000);
+		}
+
 	}
 }
